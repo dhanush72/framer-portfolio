@@ -1,12 +1,14 @@
 import AboutPage from "./pages/AboutPage";
 import ServcesPage from "./pages/ServicesPage";
+import FaqPage from "./pages/FaqPage";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <AboutPage />
       <ServcesPage />
-    </div>
+      <FaqPage />
+    </>
   );
 }
 
