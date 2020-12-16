@@ -1,15 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-    @import url("../assets/fonts/wotfard/wotfard-typo.css");
-
-    :root {
-    --color-text: #303a52;
-    --font-weight-500: 500;
-    --font-weight-400: 400;
-    --font-weight-300: 300;
-    --font-family-wotfard: "Wotfard", -apple-system, sans-serif;
-    }
 
     *{
         margin: 0;
@@ -36,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     p{
         padding: 3rem 0;
         color: #ccc;
-        font-size: 1.4rem;
+        font-size: 1rem;
         line-height: 150%;
     }
 

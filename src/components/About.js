@@ -1,6 +1,6 @@
 import React from "react";
 import home1 from "../assets/images/home1.png";
-import styled from "styled-components";
+import { AboutDiv, Description, Hide, ImageDiv } from "../styles";
 
 const About = () => {
   return (
@@ -27,32 +27,5 @@ const About = () => {
     </AboutDiv>
   );
 };
-
-// styles
-const AboutDiv = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5rem;
-`;
-
-const Description = styled.div`
-  flex: 1;
-  padding-right: 5rem;
-`;
-
-const ImageDiv = styled.div`
-  flex: 1;
-
-  img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-  }
-`;
-
-const Hide = styled.div`
-  overflow: hidden;
-`;
 
 export default About;
