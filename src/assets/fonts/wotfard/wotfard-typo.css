@@ -1,24 +1,44 @@
 @font-face {
   font-family: Wotfard;
-  src: url(./wotfard-semibold/wotfard-semibold-webfont.woff2) format("woff2"),
-    url("./wotfard-semibold/Wotfard-SemiBold.ttf") format("truetype");
+  src: url("./wotfard-semibold/wotfard-semibold-webfont.eot");
+  src: url("./wotfard-semibold/wotfard-semibold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./wotfard-semibold/wotfard-semibold-webfont.woff2") format("woff2"),
+    url("./wotfard-semibold/wotfard-semibold-webfont.woff") format("woff"),
+    url("./wotfard-semibold/wotfard-semibold-webfont.ttf") format("truetype"),
+    url("./wotfard-semibold/wotfard-semibold-webfont.svg#wotfardsemibold")
+      format("svg");
   font-weight: 500;
+  font-weight: normal;
   font-style: normal;
-  font-display: fallback;
 }
+
 @font-face {
   font-family: Wotfard;
-  src: url(./wotfard-medium/wotfard-medium-webfont.woff2) format("woff2"),
-    url("./wotfard-medium/Wotfard-Medium.ttf") format("truetype");
+  src: url("./wotfard-medium/wotfard-medium-webfont.eot");
+  src: url("./wotfard-medium/wotfard-medium-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./wotfard-medium/wotfard-medium-webfont.woff2") format("woff2"),
+    url("./wotfard-medium/wotfard-medium-webfont.woff") format("woff"),
+    url("./wotfard-medium/wotfard-medium-webfont.ttf") format("truetype"),
+    url("./wotfard-medium/wotfard-medium-webfont.svg#wotfardmedium")
+      format("svg");
   font-weight: 400;
+  font-weight: normal;
   font-style: normal;
-  font-display: fallback;
 }
+
 @font-face {
   font-family: Wotfard;
-  src: url(./wotfard-regular/wotfard-regular-webfont.woff2) format("woff2"),
-    url("./wotfard-regular/Wotfard-Regular.ttf") format("truetype");
+  src: url("./wotfard-regular/wotfard-regular-webfont.eot");
+  src: url("./wotfard-regular/wotfard-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./wotfard-regular/wotfard-regular-webfont.woff2") format("woff2"),
+    url("./wotfard-regular/wotfard-regular-webfont.woff") format("woff"),
+    url("./wotfard-regular/wotfard-regular-webfont.ttf") format("truetype"),
+    url("./wotfard-regular/wotfard-regular-webfont.svg#wotfard_regularregular")
+      format("svg");
   font-weight: 300;
+  font-weight: normal;
   font-style: normal;
-  font-display: fallback;
 }

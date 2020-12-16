@@ -1,5 +1,6 @@
 import React from "react";
-import collaboration from "../assets/images/collaboration.svg";
+import styled from "styled-components";
+import home2 from "../assets/images/home2.png";
 import clock from "../assets/images/clock.svg";
 import diaphragm from "../assets/images/diaphragm.svg";
 import money from "../assets/images/money.svg";
@@ -54,7 +55,7 @@ const Services = () => {
         </div>
       </div>
       <div className="image">
-        <img src={collaboration} alt="collaboration" />
+        <img src={home2} alt="home2" />
       </div>
     </div>
   );
