@@ -1,0 +1,16 @@
+@import url(../fonts/wotfard/wotfard-typo.css);
+
+:root {
+  --color-text: #303a52;
+  --font-weight-500: 500;
+  --font-weight-400: 400;
+  --font-weight-300: 300;
+  --font-family-wotfard: "Wotfard", -apple-system, sans-serif;
+  --reach-dialog: 1;
+}
+
+body {
+  font-family: var(--font-family-wotfard);
+  font-weight: var(--font-weight-5);
+  color: var(--color-text);
+}
