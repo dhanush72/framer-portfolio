@@ -10,7 +10,7 @@ import styled from "styled-components";
 const Services = () => {
   return (
     <ServicesDiv>
-      <Description>
+      <ServicesDesc>
         <h2>
           High <span>quality</span> services{" "}
         </h2>
@@ -44,7 +44,7 @@ const Services = () => {
             <p>Lorem ipsum dolor sit amet</p>
           </Card>
         </Cards>
-      </Description>
+      </ServicesDesc>
       <ImageDiv>
         <img src={home2} alt="home2" />
       </ImageDiv>
@@ -63,6 +63,12 @@ const ServicesDiv = styled(AboutDiv)`
   }
 `;
 
+const ServicesDesc = styled(Description)`
+  h2 {
+    font-size: 3rem;
+  }
+`;
+
 const Cards = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -78,6 +84,7 @@ const Card = styled.div`
 
     h3 {
       margin-left: 1rem;
+      font-size: 1rem;
       border-radius: 6px;
       padding: 0.6rem;
       background: #fff;

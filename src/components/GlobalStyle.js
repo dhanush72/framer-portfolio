@@ -27,13 +27,17 @@ const GlobalStyle = createGlobalStyle`
     p{
         padding: 3rem 0;
         color: #ccc;
-        font-size: 1rem;
+        font-size: .8rem;
         line-height: 150%;
     }
 
     span{
         font-weight: var(--font-weight-500);
         color: #23d997;
+    }
+
+    a{
+        text-decoration: none;
     }
 
     button{
