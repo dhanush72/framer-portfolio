@@ -15,11 +15,13 @@ export const AboutDiv = styled.div`
 
 export const Description = styled.div`
   flex: 1;
+  z-index: 2;
 `;
 
 export const ImageDiv = styled.div`
   flex: 1;
   padding-left: 5rem;
+  z-index: 2;
 
   img {
     width: 100%;

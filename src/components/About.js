@@ -3,6 +3,7 @@ import home1 from "../assets/images/home1.png";
 import { AboutDiv, Description, Hide, ImageDiv } from "../styles";
 import { motion } from "framer-motion";
 import { titleAnim, fade, imgAnim } from "../animation";
+import Wave from "../wave";
 
 const About = () => {
   return (
@@ -28,6 +29,7 @@ const About = () => {
       <ImageDiv>
         <motion.img variants={imgAnim} src={home1} alt="home1" />
       </ImageDiv>
+      <Wave />
     </AboutDiv>
   );
 };
