@@ -1,25 +1,41 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+const links = [
+  {
+    to: "/",
+    text: "1. About Us",
+  },
+  {
+    to: "/work",
+    text: "2. Our Work",
+  },
+  {
+    to: "/contact",
+    text: "3. Contact Us",
+  },
+];
+
 const Nav = () => {
+  const location = useLocation();
   return (
     <Navs>
       <h1>
         <Link to="/">Capture</Link>
       </h1>
       <ul>
-        <li>
-          <Link to="/">1. About Us</Link>
-        </li>
-
-        <li>
-          <Link to="/work">2. Our Work</Link>
-        </li>
-
-        <li>
-          <Link to="/contact">3. Contact Us</Link>
-        </li>
+        {links.map(({ to, text }) => (
+          <li key={to}>
+            <StyledLink
+              className={to === location.pathname ? "active" : ""}
+              to={to}
+            >
+              {text}
+            </StyledLink>
+          </li>
+        ))}
       </ul>
     </Navs>
   );
@@ -46,6 +62,12 @@ const Navs = styled.nav`
   li {
     padding-left: 5rem;
     position: relative;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  &.active {
+    color: #23d997;
   }
 `;
 
