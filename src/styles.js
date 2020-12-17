@@ -6,6 +6,7 @@ export const AboutDiv = styled.div`
   grid-gap: 20px;
   padding: 5rem;
   align-items: center;
+  overflow: hidden;
 
   button {
     margin-top: 2rem;
