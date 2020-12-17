@@ -1,25 +1,51 @@
 import React from "react";
 import home1 from "../assets/images/home1.png";
 import { AboutDiv, Description, Hide, ImageDiv } from "../styles";
+import { motion } from "framer-motion";
 
 const About = () => {
+  const titleAnim = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, transition: { duration: 2 } },
+  };
+
+  const container = {
+    hidden: { x: 100 },
+    show: { x: 0, transition: { duration: 0.75 } },
+  };
+
+  const btn = {
+    hidden: { y: 20, opacity: 0 },
+    show: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <AboutDiv>
       <Description>
-        <div className="title">
+        <motion.div
+          variants={container}
+          animate="show"
+          initial="hidden"
+          className="title"
+        >
           <Hide>
-            <h2>We work to make</h2>
+            <motion.h2 variants={titleAnim}>We work to make</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2>
               your <span>dreams</span>
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>come true.</h2>
+            <motion.h2>come true.</motion.h2>
           </Hide>
-        </div>
-        <button>Contact us</button>
+        </motion.div>
+        <motion.button variants={btn} animate="show" initial="hidden">
+          Contact us
+        </motion.button>
       </Description>
       <ImageDiv>
         <img src={home1} alt="home1" />
