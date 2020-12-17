@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { AboutDiv } from "../styles";
+import Toggle from "./Toggle";
 
 const Faq = () => {
   return (
@@ -8,39 +9,34 @@ const Faq = () => {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <div className="question">
-        <h4>How do i start?</h4>
+
+      <Toggle title="How do i start?">
         <div className="answer">
-          <p>title</p>
+          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
             adipisci dolorem eaque!
           </p>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Different Payment Methods</h4>
+      </Toggle>
+      <Toggle title="Different Payment Methods">
         <div className="answer">
-          <p>title</p>
+          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
             adipisci dolorem eaque!
           </p>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>What product do you?</h4>
+      </Toggle>
+      <Toggle title="What product do you?">
         <div className="answer">
-          <p>title</p>
+          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
             adipisci dolorem eaque!
           </p>
         </div>
-        <div className="faq-line"></div>
-      </div>
+      </Toggle>
     </FaqDiv>
   );
 };
