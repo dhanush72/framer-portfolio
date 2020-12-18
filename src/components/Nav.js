@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const links = [
   {
@@ -19,7 +20,7 @@ const links = [
 ];
 
 const Nav = () => {
-  const location = useLocation();
+  const { pathname } = useLocation();
   return (
     <Navs>
       <h1>
@@ -28,12 +29,14 @@ const Nav = () => {
       <ul>
         {links.map(({ to, text }) => (
           <li key={to}>
-            <StyledLink
-              className={to === location.pathname ? "active" : ""}
-              to={to}
-            >
+            <StyledLink className={to === pathname ? "active" : ""} to={to}>
               {text}
             </StyledLink>
+            <ActiveLine
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{ width: to === pathname ? "30%" : "0%" }}
+            />
           </li>
         ))}
       </ul>
@@ -81,6 +84,19 @@ const Navs = styled.nav`
         padding-left: 0;
       }
     }
+  }
+`;
+
+const ActiveLine = styled(motion.div)`
+  height: 0.2rem;
+  position: absolute;
+  width: 0;
+  bottom: -80%;
+  left: 60%;
+  background: #23d997;
+
+  @media (max-width: 768px) {
+    left: 0%;
   }
 `;
 
