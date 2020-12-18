@@ -50,6 +50,10 @@ const MovieDetails = () => {
 const Details = styled(motion.div)`
   color: #fff;
   padding: 5rem;
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
 `;
 const HeadLine = styled.div`
   min-height: 90vh;
@@ -71,10 +75,19 @@ const HeadLine = styled.div`
 const Awards = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 768px) {
+    display: block;
+    margin: 1rem;
+  }
 `;
 
 const AwardStyle = styled.div`
   padding: 5rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 
   h3 {
     font-size: 1rem;
