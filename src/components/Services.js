@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import home2 from "../assets/images/home2.png";
 import clock from "../assets/images/clock.svg";
 import diaphragm from "../assets/images/diaphragm.svg";
@@ -6,8 +6,8 @@ import money from "../assets/images/money.svg";
 import teamwork from "../assets/images/teamwork.svg";
 import { AboutDiv, Description, ImageDiv } from "../styles";
 import styled from "styled-components";
-import { useScroll } from "./useScroll";
 import { scrollReveal } from "../animation";
+import { useScroll } from "./useScroll";
 
 const Services = () => {
   const [element, controls] = useScroll();

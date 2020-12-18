@@ -7,7 +7,6 @@ export const AboutDiv = styled(motion.div)`
   grid-gap: 20px;
   padding: 5rem;
   align-items: center;
-  overflow: hidden;
 
   button {
     margin-top: 2rem;
