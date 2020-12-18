@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { AboutDiv } from "../styles";
 import Toggle from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion";
 
 const Faq = () => {
   return (
@@ -9,34 +10,35 @@ const Faq = () => {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-
-      <Toggle title="How do i start?">
-        <div className="answer">
-          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            adipisci dolorem eaque!
-          </p>
-        </div>
-      </Toggle>
-      <Toggle title="Different Payment Methods">
-        <div className="answer">
-          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            adipisci dolorem eaque!
-          </p>
-        </div>
-      </Toggle>
-      <Toggle title="What product do you?">
-        <div className="answer">
-          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            adipisci dolorem eaque!
-          </p>
-        </div>
-      </Toggle>
+      <AnimateSharedLayout>
+        <Toggle title="How do i start?">
+          <div className="answer">
+            <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              adipisci dolorem eaque!
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Different Payment Methods">
+          <div className="answer">
+            <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              adipisci dolorem eaque!
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="What product do you?">
+          <div className="answer">
+            <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              adipisci dolorem eaque!
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </FaqDiv>
   );
 };
