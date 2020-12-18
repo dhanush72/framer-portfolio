@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const AboutDiv = styled.div`
+export const AboutDiv = styled(motion.div)`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;

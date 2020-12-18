@@ -3,10 +3,18 @@ import styled from "styled-components";
 import { AboutDiv } from "../styles";
 import Toggle from "./Toggle";
 import { AnimateSharedLayout } from "framer-motion";
+import { useScroll } from "./useScroll";
+import { scrollReveal } from "../animation";
 
 const Faq = () => {
+  const [element, controls] = useScroll();
   return (
-    <FaqDiv>
+    <FaqDiv
+      variants={scrollReveal}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+    >
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
@@ -44,6 +52,7 @@ const Faq = () => {
 };
 
 const FaqDiv = styled(AboutDiv)`
+  overflow: hidden;
   display: block;
 
   span {
