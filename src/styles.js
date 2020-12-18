@@ -8,6 +8,12 @@ export const AboutDiv = styled(motion.div)`
   padding: 5rem;
   align-items: center;
 
+  @media (max-width: 768px) {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+  }
+
   button {
     margin-top: 2rem;
   }
@@ -16,6 +22,14 @@ export const AboutDiv = styled(motion.div)`
 export const Description = styled.div`
   flex: 1;
   z-index: 2;
+
+  @media (max-width: 768px) {
+    padding: 0;
+
+    button {
+      margin: 2rem;
+    }
+  }
 `;
 
 export const ImageDiv = styled.div`
@@ -27,6 +41,10 @@ export const ImageDiv = styled.div`
     width: 100%;
     height: 80vh;
     object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    padding-left: 0;
   }
 `;
 

@@ -70,6 +70,12 @@ const ServicesDiv = styled(AboutDiv)`
     width: 70%;
     padding: 2rem 0 4rem 0;
   }
+
+  @media (max-width: 768px) {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+  }
 `;
 
 const ServicesDesc = styled(Description)`

@@ -66,6 +66,22 @@ const Navs = styled.nav`
     padding-left: 5rem;
     position: relative;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 2rem 0;
+    height: 20vh;
+
+    ul {
+      padding: 2rem;
+      justify-content: space-around;
+      width: 100%;
+
+      li {
+        padding-left: 0;
+      }
+    }
+  }
 `;
 
 const StyledLink = styled(Link)`

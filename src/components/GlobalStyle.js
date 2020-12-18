@@ -10,6 +10,14 @@ const GlobalStyle = createGlobalStyle`
         font-weight: var(--font-weight-400);
     }
 
+    html{
+        @media (max-width: 768px){
+            font-size: 75%
+        }
+
+        
+    }
+
     body{
         color: #fff;
         background: #1b1b1b;

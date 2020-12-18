@@ -52,6 +52,7 @@ const Faq = () => {
 };
 
 const FaqDiv = styled(AboutDiv)`
+  width: 100%;
   overflow: hidden;
   display: block;
 
@@ -65,6 +66,12 @@ const FaqDiv = styled(AboutDiv)`
 
   h2 {
     padding-bottom: 2rem;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      text-align: left;
+      font-size: 2rem;
+    }
   }
 
   .faq-line {
@@ -77,6 +84,11 @@ const FaqDiv = styled(AboutDiv)`
   .question {
     padding: 3rem 0;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      text-align: left;
+    }
   }
 
   .answer {
